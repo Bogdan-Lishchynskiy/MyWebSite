@@ -34,8 +34,6 @@ nav{
 footer{
     background-color: yellow;
 }
-.wrapper { 
-}
 
 
 a {
@@ -100,7 +98,6 @@ a:hover {
 .framework {
     display: flex;
     flex-direction:row-reverse;
-    /*background-color: yellow; */
 }
 
 .frameworkIcon {
