@@ -12,27 +12,24 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li>
-                    <a href="#aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#webframeworks">WEB Frameworks</a>
-                </li>
-                <li>
-                    <a href="#links">Links</a>
-                </li>
-                <li>
-                    <a href="#contactme">Contact Me</a>
-                </li>
+            <a href="#" id="menu-icon"></a>
+            <ul class="menuMain">
+                <li><a href="#aboutme" class="current">About Me</a></li>
+                <li><a href="#webframeworks">Frameworks</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
             </ul>
         </nav>
-        <img src="photos/avatar.jpg" alt="Bogdan Lishchynskiy">
-        <h1>Bogdan Lishchynskiy</h1>
     </header>
-    <main>
-        <section id="aboutme">
-            <h2>About me</h2>
+    <img class="avatarIcon" src="photos/avatar.jpg" alt="Bogdan">
+    <!--<div class="imageRes"></div>-->
+    <main class="mainContainer">
+        <section id="aboutme" class="oneSection">
+            <div class="sectionTitleLine">
+                  <span class="sectionTitle">
+                    About me
+                  </span>
+            </div>            
             <p>Hello my name is Bogdan,welcome to my first business card site.
                 I am 25 and three years ago finished Lviv Politechnik university.
                 Last year i learn more about web it's only begining, but
@@ -46,33 +43,44 @@
                 something new in sphere of web development
             </p>
         </section>
-        <hr>
-        <section id="webframeworks">
-            <h2>Web frameworks</h2>
-            <div class="framework">
-                <p>React is created and supported by Facebook. Although React
+
+        <section id="webframeworks" class="oneSection">
+            <div class="sectionTitleLine">
+                  <span class="sectionTitle">
+                    Web frameworks
+                  </span>
+            </div> 
+            <div class="containerframework">
+                <div class="framework">
+                    <p>React is created and supported by Facebook. Although React
                     is actually not a full-stack framework, it provides
                     only View-level (templating language) and some callback
                     functions to render HTML code, it’s a powerful frontend
                     tool.
                     <a href="https://reactjs.org/" target="_blank">Visit React</a>
-                </p>
-                <img src="logoicons/reactt.png" alt="logo react">
-            </div>
+                    </p>
+                </div>
+                <div>
+                    <img class="frameworkIcon" src="logoicons/reactt.png" alt="logo react">
+                </div>
 
-            <div class="framework">
-                <p>Angular is a javascript open-source framework designed
+
+                <div class="framework">
+                    <p>Angular is a javascript open-source framework designed
                     specially for single-page web apps and mobile application
                     development, using MVC architectural pattern. It is
                     not a full-stack, but just a frontend framework dealing
                     basically with your webpages.
                     <a href="https://angular.io/" target="_blank">Visit Angular</a>
-                </p>
-                <img src="logoicons/ang.png" alt="logo angular">
-            </div>
-
-            <div class="framework">
-                <p>Node.js is an open source, cross-platform runtime environment
+                    </p>
+                </div>
+                <div>
+                    <img class="frameworkIcon" src="logoicons/ang.png" alt="logo angular">
+                </div>
+            </div> 
+            <div class="containerframework">
+                <div class="framework">
+                    <p>Node.js is an open source, cross-platform runtime environment
                     for developing server-side and networking applications
                     This applications are written in JavaScript, and can
                     be run within the Node.js runtime on OS X, Microsoft
@@ -81,11 +89,14 @@
                     development of web applications using Node.js to a
                     great extent.
                     <a href="https://nodejs.org" target="_blank">Visit NodeJS</a>
-                </p>
-                <img src="logoicons/node.png" alt="logo nodejs">
-            </div>
-            <div class="framework">
-                <p>Rails is a web application framework, written in Ruby,
+                    </p>
+                </div>
+                <div>
+                    <img class="frameworkIcon" src="logoicons/node.png" alt="logo nodejs">
+                </div>
+            
+                <div class="framework">
+                    <p>Rails is a web application framework, written in Ruby,
                     that was derived by David Heinemeier Hansson (DHH)
                     out of work done to create the project management software.
                     Rails aims for flexible, pragmatic, and quick development
@@ -94,53 +105,74 @@
                     attractive full-stack web application platform and
                     a leading open source tool.
                     <a href="https://nodejs.org" target="_blank">Visit Rails</a>
-                </p>
-                <img src="logoicons/rails.png" alt="logo rails">
+                    </p>
+                </div>
+                <div>
+                    <img class="frameworkIcon" src="logoicons/rails.png" alt="logo rails">
+                </div>
             </div>
+        </div>
         </section>
-        <hr>
-        <section id="links">
-            <h2>Links</h2>
-            <div class="social">
-                <a href="https://www.facebook.com/bodya.lishchynskiy" target="_blank">
-                    <img src="logoicons/fbs.png" alt="logo fb">
-                </a>
+        <section id="links" class="oneSection">
+            <div class="sectionTitleLine">
+                  <span class="sectionTitle">
+                    Links
+                  </span>
+            </div>   
+            <div class="socialIcons">
+                <div class="social">
+                    <a href="https://www.facebook.com/bodya.lishchynskiy" target="_blank">
+                        <img class="frameworkIcon" src="logoicons/fbs.png" alt="logo fb">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img class="frameworkIcon" src="logoicons/youtube.png" alt="logo youtube">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.google.com" target="_blank">
+                        <img class="frameworkIcon" src="logoicons/google.png" alt="logo google">
+                    </a>
+                </div>
             </div>
-            <div class="social">
-                <a href="https://www.youtube.com" target="_blank">
-                    <img src="logoicons/youtube.png" alt="logo youtube">
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.google.com" target="_blank">
-                    <img src="logoicons/google.png" alt="logo google">
-                </a>
-            </div>
-        </section>
-
-        <section id="contactme">
-            <h2>Contact Me</h2>
-            <form method="POST" action="https://formspree.io/lishchynskiy91@gmail.com">
-                <label>
-                    <input type="text" name="Name" placeholder="Your name" required>
-                </label>
-                <br>
-                <label>
-                    <input type="email" name="Mail" placeholder="Your mail" required>
-                </label>
-                <br>
-                <br>
-                <label>
-                    <textarea name="Message" placeholder="Type your message..."
-                    required></textarea>
-                </label>
-                <br>
-                <input type="submit" value="Send">
-            </form>
         </section>
 
+        <section id="contactme" class="oneSection">
+            <div class="sectionTitleLine">
+                  <span class="sectionTitle">
+                    Contact Me
+                  </span>
+            </div>            
+            <form id="contact-form">
+        <label>Your name:
+            <input type="text" id="name" placeholder="Your name">
+        </label>
+        <br>
+        <label>Your email:
+            <input type="email" id="email" placeholder="Your email">
+        </label>
+        <br>
+        <label>Your message:
+            <textarea id="message" placeholder="Type your message..."></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+      <dialog id="thank-dialog">
+        <p>Thank you for contacting us!</p>
+    </dialog>    
+    
+    <dialog id="error-dialog">
+        <p>Sorry, an error has occured!</p>
+    </dialog>
+        </section>
     </main>
     <footer>Copyright© 2017, Bogdan Lishchynskiy, All rights reserved.</footer>
+    
 </body>
-
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+     <script src="js/form.js"></script>
 </html>
