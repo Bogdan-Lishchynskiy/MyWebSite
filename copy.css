@@ -98,6 +98,7 @@ a:hover {
 .framework {
     display: flex;
     flex-direction:row-reverse;
+   /
 }
 
 .frameworkIcon {

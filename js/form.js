@@ -1,5 +1,7 @@
 $(function(){
-  $('#contact-form input[type=submit]').click(sendForm); 
+$('#contact input[type=submit]').click(sendForm); 
+  
+    $('.fa').on('click', function(){window.scrollTo(0,0)});
 });
 
 function sendForm(ev) {
@@ -16,7 +18,16 @@ function sendForm(ev) {
             },
             dataType: "json"
         })
-         .done( () => $('#thank-dialog').attr('open', 'open') )
-         .fail( () => $('#error-dialog').attr('open', 'open') );    
+         .done( () => {
+//             $('#thank-dialog').attr('open', 'open');
+             $('#thank-dialog').removeClass('hiddenDialog');
+             setTimeout(() => {$('#thank-dialog').attr('class', 'hiddenDialog')}, 3500);
+         })
+        .fail( () => {
+//            $('#error-dialog').attr('open', 'open'); 
+            $('#error-dialog').removeClass('hiddenDialog');
+            setTimeout(() => {$('#error-dialog').attr('class', 'hiddenDialog')}, 3500);
+         });     
     }
 }
+

@@ -7,6 +7,7 @@ body {
 
 header {
     width: 100%;
+    height: 65px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -26,7 +27,7 @@ nav {
 .mainContainer {
     background-color: #8C92CD;
     color: #1E2140;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 10px 10px;
     margin: -5px 0px 0px 0px;
 }
 
@@ -43,7 +44,7 @@ a:hover {
     display: hidden;
     width: 40px;
     height: 40px;
-    background: #4C8FEC url('/logoicons/menu-icon.png') center;
+    background: #4C8FEC url('../logoicons/menu-icon.png') center;
 }
 
 
@@ -69,6 +70,7 @@ ul {
 
 
 .oneSection {
+    position:relative;
     padding: 20px 0 0 0;
 }
 
@@ -107,14 +109,88 @@ div.social {
     width: 33%;
 }
 
+.contact-form {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    
+}
+
+.inputField{
+    margin:10px;
+}
+
+footer {
+    padding: 15px;
+    margin: 0;
+    background-color:  #4c348a;
+    color: white;
+    text-align: center;
+}
+
+i.fa  {
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    font-size: 5em;
+    cursor: pointer;
+    color:#4c348a;
+    
+}
+
+.hiddenDialog {
+    display: none;
+}
+
+#thank-dialog {
+    position: fixed;
+    top: 80%;
+    background-color: #77f99e;
+}
+#error-dialog {
+    position: fixed;
+    top: 80%;
+    background-color: #F44336;
+}
+
+
+@media (min-width:641px) {
+    .btn-submit {
+        display: block;
+        position: relative;
+        left: 65%;
+        width: 30%;
+        padding: .1rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        color: #fff;
+        background-color: #4c348a;
+        border-color: #4c348a;
+    }
+}
+
 @media (max-width:640px) {
     div.social {
         width: 100%;
-        padding: 10px;
+        padding: 10px 0;
     }
     div.socialIcons {
         display: block;
         width: 100%;
+    }
+    
+    .btn-submit{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: .1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #4c348a;
+    border-color: #4c348a;
     }
 }
 
@@ -178,6 +254,4 @@ div.social {
         padding: 20px;
         width: 80%;
     }
-
-
 }
