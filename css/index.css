@@ -19,10 +19,6 @@ nav {
     float: right;
 }
 
-.avatarIcon {
-    width: 100%;
-}
-
 
 .mainContainer {
     background-color: #8C92CD;
@@ -44,7 +40,7 @@ a:hover {
     display: hidden;
     width: 40px;
     height: 40px;
-    background: #4C8FEC url('../logoicons/menu-icon.png') center;
+    background: #4C8FEC url('../img/menu-icon.png') center;
 }
 
 
@@ -54,10 +50,11 @@ ul {
 
 .menuMain li {
     display: inline-block;
-    width: 18%;
+    width: 19%;
     text-align: center;
-    padding: 15px;
+    padding: 11px;
     border: 1px solid black;
+    font-family:Arial
 }
 
 .menuMain a:hover {
@@ -154,7 +151,7 @@ i.fa  {
 }
 
 
-@media (min-width:641px) {
+@media (min-width:655px) {
     .btn-submit {
         display: block;
         position: relative;
@@ -170,7 +167,7 @@ i.fa  {
     }
 }
 
-@media (max-width:640px) {
+@media (max-width:655px) {
     div.social {
         width: 100%;
         padding: 10px 0;
@@ -206,9 +203,8 @@ i.fa  {
     width: 100%;
 }
 
-/*MEDIA QUERY*/
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 655px) {
     header {
         position: absolute;
     }
@@ -229,7 +225,7 @@ i.fa  {
         background: #fff;
         border: 3px solid #444;
         right: 2px;
-        top: 21px;
+        top: 36px;
         width: 40%;
         border-radius: 4px 0 4px 4px;
     }
@@ -240,6 +236,7 @@ i.fa  {
         padding: 10px 0;
         margin: 0;
         border: none;
+        
     }
 
     nav:hover ul {
